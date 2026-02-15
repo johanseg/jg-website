@@ -1,0 +1,65 @@
+name: Deploy Astro to Hostinger VPS
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "Johan-Garcia/**"
+      - ".github/workflows/deploy-hostinger.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Johan-Garcia
+    env:
+      VPS_HOST: ${{ secrets.VPS_HOST }}
+      VPS_USER: ${{ secrets.VPS_USER }}
+      VPS_PORT: ${{ secrets.VPS_PORT }}
+      DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
+      RELOAD_COMMAND: ${{ secrets.RELOAD_COMMAND }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: Johan-Garcia/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Astro site
+        run: npm run build
+
+      - name: Configure SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          PORT="${VPS_PORT:-22}"
+          ssh-keyscan -p "$PORT" -H "$VPS_HOST" >> ~/.ssh/known_hosts
+
+      - name: Deploy dist to VPS
+        run: |
+          PORT="${VPS_PORT:-22}"
+          rsync -az --delete \
+            -e "ssh -p $PORT" \
+            ./dist/ "${VPS_USER}@${VPS_HOST}:${DEPLOY_PATH}/"
+
+      - name: Reload services (optional)
+        run: |
+          if [ -n "$RELOAD_COMMAND" ]; then
+            PORT="${VPS_PORT:-22}"
+            ssh -p "$PORT" "${VPS_USER}@${VPS_HOST}" "$RELOAD_COMMAND"
+          fi
