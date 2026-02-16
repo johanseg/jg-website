@@ -1,1153 +1,1321 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Johan Garcia</title>
-</head>
-<body>
-    <header>
-        <div class="header-container">
-            <div class="logo">
-                <a href="#home">JG</a>
-            </div>
-            <button class="menu-toggle" aria-label="Abrir menú">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                    <li><a href="#case-studies">Case Studies</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        </div>
-    </header>
+---
+import Layout from '../layouts/Layout.astro';
+---
 
-<main>
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <img src="/media/johan-garcia.png" alt="Johan Garcia, Digital Marketing Expert" class="hero-photo">
-            <div class="hero-text">
-                <h1>Johan Garcia: Leading Digital Growth for Ambitious Brands</h1>
-                <p>
-                    I help companies dominate their market and unlock rapid, measurable growth. With 13+ years building and scaling revenue engines for startups and Fortune 500 giants—including Warner Bros. Games, PlayStation, Amazon, and Meta—I deliver proven results in lead generation, paid acquisition, and full-funnel marketing strategy. 
-                    <br /><br />
-                    From multi-million dollar campaigns to cutting-edge AI launches, I bring the technical depth and creative strategy to turn ambitious goals into industry-leading outcomes.
-                </p>
-                <a href="mailto:info@johangarcia.com" class="button">Let’s Accelerate Your Growth</a>
-            </div>
-        </div>
-    </section>
+<Layout title="Johan Garcia — AI Growth Architect">
 
-    <section id="about" class="about">
-        <h2>Meet Johan Garcia</h2>
-        <div class="about-content">
-            <div class="about-header">
-                <h3>Fractional CMO & Paid Acquisition Architect</h3>
-                <p>
-                    Trusted by leading brands and fast-growing startups, I specialize in scaling profitable customer acquisition and building high-performance marketing teams. My expertise: integrating analytics, automation, and breakthrough creative for predictable pipeline and next-level ROI.
-                </p>
-            </div>
-            <div class="achievements">
-                <h4>Proven Impact</h4>
-                <ul>
-                    <li>
-                        <strong>Netflix & PlayStation:</strong>
-                        <span>Directed $60M+ in ad spend, boosting Trials by 40% while driving double-digit ROI improvements.</span>
-                    </li>
-                    <li>
-                        <strong>Townsquare Media:</strong>
-                        <span>Engineered a 50% lift in qualified leads and slashed acquisition costs by 40% in less than a year.</span>
-                    </li>
-                    <li>
-                        <strong>Meta (Facebook):</strong>
-                        <span>Orchestrated ad ops for WhatsApp across LATAM & North America, delivering 15% quarterly revenue growth.</span>
-                    </li>
-                    <li>
-                        <strong>MenoLabs (Ecommerce):</strong>
-                        <span>Grew MRR from 55k  to 4.5m in 10 months across Paid Social .</span>
-                    </li>
-                    <li>
-                        <strong>Startup Portfolio:</strong>
-                        <span>Repeatedly exceeded aggressive user acquisition and ROI targets through strategic channel mix and stack innovation.</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="about-footer">
-                <p>
-                    My mission: Make your marketing not just effective—but unstoppable. Ready to unlock scalable, high-quality growth? Let’s talk.
-                </p>
-            </div>
-        </div>
-    </section>
+<!-- ═══════════════════════ NAV ═══════════════════════ -->
+<nav class="nav" id="nav">
+	<div class="nav__inner">
+		<a href="#hero" class="nav__logo">
+			<span class="nav__logo-text">JG</span>
+			<span class="nav__logo-dot"></span>
+		</a>
+		<div class="nav__links">
+			<a href="#expertise" class="nav__link">Expertise</a>
+			<a href="#results" class="nav__link">Results</a>
+			<a href="#experience" class="nav__link">Experience</a>
+			<a href="#ai" class="nav__link">AI Lab</a>
+			<a href="#contact" class="nav__link nav__link--cta">Let's Talk</a>
+		</div>
+		<button class="nav__toggle" aria-label="Menu">
+			<span></span><span></span>
+		</button>
+	</div>
+</nav>
 
-    <section id="services" class="services">
-        <h2>How I Deliver Results</h2>
-        <div class="service-list">
-            <div class="service">
-                <h3>Performance Marketing & Lead Generation</h3>
-                <ul>
-                    <li>Strategy and hands-on execution of high-ROI paid campaigns across Facebook, Google, TikTok, YouTube, and programmatic.</li>
-                    <li>Audience segmentation, retargeting, and funnel optimization to maximize every marketing dollar.</li>
-                    <li>Expert in SaaS, lead generation, ecommerce, pay-per-call, and B2B growth.</li>
-                </ul>
-            </div>
-            <div class="service">
-                <h3>Full-Funnel Digital Strategy</h3>
-                <ul>
-                    <li>End-to-end digital planning: SEM, SEO, paid social, CRO, landing page design, and analytics integration.</li>
-                    <li>Brand positioning and creative development for breakout campaigns.</li>
-                    <li>Data science-driven reporting and attribution modeling for continuous optimization.</li>
-                </ul>
-            </div>
-            <div class="service">
-                <h3>Marketing Operations & Automation</h3>
-                <ul>
-                    <li>Build and refine marketing tech stacks for scale and speed—no wasted spend.</li>
-                    <li>Process and workflow optimization across teams, from agency to in-house.</li>
-                    <li>Training and enablement for marketing teams to own best-in-class execution.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+<!-- ═══════════════════════ HERO ═══════════════════════ -->
+<section class="hero" id="hero">
+	<div class="hero__grid-bg"></div>
+	<div class="hero__orbs">
+		<div class="hero__orb hero__orb--1"></div>
+		<div class="hero__orb hero__orb--2"></div>
+		<div class="hero__orb hero__orb--3"></div>
+	</div>
 
-    <section id="case-studies" class="case-studies">
-        <h2>Results That Speak</h2>
-        <div class="case-study-list">
-            <div class="case-study">
-                <h3>Townsquare Media</h3>
-                <ul>
-                    <li>Integrated 7 channels for a unified growth strategy.</li>
-                    <li>Increased qualified leads by 50% and reduced CPA by 40% in under 12 months.</li>
-                </ul>
-            </div>
-            <div class="case-study">
-                <h3>Meta (Facebook)</h3>
-                <ul>
-                    <li>Managed ad operations for WhatsApp/Ads across LATAM & North America.</li>
-                    <li>Drove 15% ad revenue growth quarter-over-quarter.</li>
-                </ul>
-            </div>
-            <div class="case-study">
-                <h3>Startup Portfolio</h3>
-                <ul>
-                    <li>Designed and executed multi-channel user acquisition programs.</li>
-                    <li>Beat acquisition targets by 30%+ while improving campaign ROI by double digits.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-</main>
-        <section id="contact" class="contact">
-            <h2>Contact</h2>
-            <p>Ready to take your digital marketing to the next level? Contact me today.</p>
-            <div class="contact-info">
-                <p>📧 Email: <a href="mailto:info@johangarcia.com">info@johangarcia.com</a></p>
-                <p>🌐 LinkedIn: <a href="https://www.linkedin.com/in/johangarcia" target="_blank">www.linkedin.com/in/johangarcia</a></p>
-                <p>📞 Phone: <a href="tel:+17866001889">+1 (786) 600-1889</a></p>
-                    </div>
-        </section>
-    </main>
+	<div class="hero__content">
+		<div class="hero__badge fade-up">
+			<span class="hero__badge-dot"></span>
+			Available for consulting & fractional CMO roles
+		</div>
 
-    <footer>
-        <p>&copy; 2025 Digital Marketing Portfolio - All rights reserved.</p>
-    </footer>
+		<h1 class="hero__title fade-up" style="--delay: 0.1s">
+			I build <span class="gradient-text">AI-powered</span><br />
+			growth engines.
+		</h1>
 
-    <style>
-        /* Estilos base */
-        html, body {
-            width: 100vw;
-            overflow-x: hidden;
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='16,2 30,16 16,30 2,16' fill='%23b7aefa' fill-opacity='0.06'/%3E%3C/svg%3E");
-            background-size: 12px 12px;
-            color: #2d3436;
-            line-height: 1.6;
-        }
+		<p class="hero__subtitle fade-up" style="--delay: 0.2s">
+			Performance marketing architect with 13+ years scaling revenue from $0 to $25M+.
+			I fuse <strong>generative AI</strong>, data engineering, and paid acquisition
+			to create self-optimizing marketing systems.
+		</p>
 
-        /* Header y Navegación */
-        header {
-            background: rgba(124, 96, 213, 0.95);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-        }
+		<div class="hero__actions fade-up" style="--delay: 0.3s">
+			<a href="#contact" class="btn btn--primary">
+				<span>Start a conversation</span>
+				<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+			</a>
+			<a href="#expertise" class="btn btn--ghost">See what I do</a>
+		</div>
 
-        .header-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+		<div class="hero__stats fade-up" style="--delay: 0.4s">
+			<div class="hero__stat">
+				<span class="hero__stat-value" data-count="60">$60M+</span>
+				<span class="hero__stat-label">Ad Spend Managed</span>
+			</div>
+			<div class="hero__stat">
+				<span class="hero__stat-value">13+</span>
+				<span class="hero__stat-label">Years Experience</span>
+			</div>
+			<div class="hero__stat">
+				<span class="hero__stat-value">10+</span>
+				<span class="hero__stat-label">Verticals Scaled</span>
+			</div>
+		</div>
+	</div>
 
-        .logo a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.8rem;
-            font-weight: 700;
-            letter-spacing: 1px;
-            padding: 0.5rem 1rem;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            border-radius: 8px;
-            transition: all 0.3s ease;
-        }
+	<div class="hero__visual fade-up" style="--delay: 0.5s">
+		<div class="hero__terminal">
+			<div class="terminal__header">
+				<span class="terminal__dot terminal__dot--r"></span>
+				<span class="terminal__dot terminal__dot--y"></span>
+				<span class="terminal__dot terminal__dot--g"></span>
+				<span class="terminal__title">growth_engine.py</span>
+			</div>
+			<div class="terminal__body">
+				<code class="terminal__line"><span class="t-kw">from</span> <span class="t-mod">anthropic</span> <span class="t-kw">import</span> Claude</code>
+				<code class="terminal__line"><span class="t-kw">from</span> <span class="t-mod">pipeline</span> <span class="t-kw">import</span> AdCreativeEngine</code>
+				<code class="terminal__line"></code>
+				<code class="terminal__line"><span class="t-fn">engine</span> = AdCreativeEngine(</code>
+				<code class="terminal__line">  <span class="t-key">model</span>=<span class="t-str">"claude-sonnet-4"</span>,</code>
+				<code class="terminal__line">  <span class="t-key">channels</span>=[<span class="t-str">"meta"</span>, <span class="t-str">"google"</span>, <span class="t-str">"tiktok"</span>],</code>
+				<code class="terminal__line">  <span class="t-key">budget_optimizer</span>=<span class="t-bool">True</span>,</code>
+				<code class="terminal__line">  <span class="t-key">creative_gen</span>=<span class="t-str">"comfyui_sdxl"</span></code>
+				<code class="terminal__line">)</code>
+				<code class="terminal__line"></code>
+				<code class="terminal__line"><span class="t-cm"># Launch campaign with AI creative rotation</span></code>
+				<code class="terminal__line"><span class="t-fn">engine</span>.<span class="t-fn">deploy</span>(<span class="t-key">target_roas</span>=<span class="t-num">4.5</span>)</code>
+				<code class="terminal__line"><span class="t-cm"># → Generated 47 ad variants</span></code>
+				<code class="terminal__line"><span class="t-cm"># → ROAS: 6.2x in 72 hours</span></code>
+				<code class="terminal__line typing-cursor"><span class="t-cm"># → Scaling spend 3x...</span></code>
+			</div>
+		</div>
+	</div>
+</section>
 
-        .logo a:hover {
-            background: rgba(255, 255, 255, 0.1);
-            border-color: white;
-            transform: translateY(-2px);
-        }
+<!-- ═══════════════════════ EXPERTISE ═══════════════════════ -->
+<section class="section expertise" id="expertise">
+	<div class="section__container">
+		<div class="section__header fade-up">
+			<span class="section__tag">What I Do</span>
+			<h2 class="section__title">Three disciplines.<br /><span class="gradient-text">One growth system.</span></h2>
+		</div>
 
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(135deg, #7c60d5 0%, #3a8dde 100%);
-            backdrop-filter: blur(18px) saturate(1.2);
-            -webkit-backdrop-filter: blur(18px) saturate(1.2);
-            border: 3px solid #a18ff7;
-            box-shadow: none;
-            border-top-left-radius: 32px;
-            border-bottom-left-radius: 32px;
-            transition: box-shadow 0.3s, border 0.3s;
-        }
+		<div class="expertise__grid">
+			<div class="expertise__card fade-up" style="--delay: 0.1s">
+				<div class="expertise__icon">
+					<svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+						<path d="M16 4L28 10v12L16 28 4 22V10L16 4z" stroke="var(--accent)" stroke-width="1.5"/>
+						<circle cx="16" cy="16" r="4" stroke="var(--accent)" stroke-width="1.5"/>
+						<path d="M16 4v8M16 20v8M4 10l8.5 4.5M19.5 17.5L28 22M28 10l-8.5 4.5M12.5 17.5L4 22" stroke="var(--accent)" stroke-width="1" opacity="0.4"/>
+					</svg>
+				</div>
+				<h3 class="expertise__card-title">AI & Generative AI</h3>
+				<p class="expertise__card-desc">I build AI systems that generate ad creatives, optimize bidding, and predict conversion paths. From ComfyUI image pipelines to Claude-powered copy engines — I architect the automation layer that turns data into revenue.</p>
+				<div class="expertise__tags">
+					<span>Claude API</span><span>ComfyUI</span><span>Stable Diffusion</span><span>LLM Agents</span><span>n8n</span><span>AI Video</span>
+				</div>
+			</div>
 
-        .nav-links a {
-            color: #fff;
-            font-size: 1.25rem;
-            font-weight: 600;
-            padding: 0.5rem 1.2rem;
-            border-radius: 1.5rem;
-            background: transparent;
-            border: none;
-            transition: color 0.3s, text-shadow 0.3s;
-            box-shadow: none;
-            text-shadow: 0 1px 4px rgba(124,96,213,0.08);
-            letter-spacing: 0.5px;
-            position: relative;
-            text-decoration: none;
-        }
+			<div class="expertise__card fade-up" style="--delay: 0.2s">
+				<div class="expertise__icon">
+					<svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+						<path d="M4 24l6-8 5 4 6-10 7 6" stroke="var(--accent-2)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+						<circle cx="10" cy="16" r="2" fill="var(--accent-2)" opacity="0.3"/>
+						<circle cx="15" cy="20" r="2" fill="var(--accent-2)" opacity="0.3"/>
+						<circle cx="21" cy="10" r="2" fill="var(--accent-2)" opacity="0.3"/>
+						<circle cx="28" cy="16" r="2" fill="var(--accent-2)" opacity="0.3"/>
+					</svg>
+				</div>
+				<h3 class="expertise__card-title">Performance Marketing</h3>
+				<p class="expertise__card-desc">$60M+ in ad spend managed across Meta, Google, TikTok, and programmatic. I design full-funnel acquisition systems — from quiz funnels and pre-sell pages to attribution modeling and LTV optimization.</p>
+				<div class="expertise__tags">
+					<span>Meta Ads</span><span>Google Ads</span><span>TikTok</span><span>Programmatic</span><span>Lead Gen</span><span>Pay-Per-Call</span>
+				</div>
+			</div>
 
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            left: 50%;
-            right: 50%;
-            bottom: 4px;
-            height: 6px;
-            background: linear-gradient(90deg, #fff 0%, #7c60d5 100%);
-            border-radius: 3px;
-            opacity: 0;
-            transition: all 0.35s cubic-bezier(0.4,0,0.2,1);
-        }
+			<div class="expertise__card fade-up" style="--delay: 0.3s">
+				<div class="expertise__icon">
+					<svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+						<rect x="4" y="8" width="10" height="10" rx="2" stroke="var(--accent-3)" stroke-width="1.5"/>
+						<rect x="18" y="14" width="10" height="10" rx="2" stroke="var(--accent-3)" stroke-width="1.5"/>
+						<path d="M14 13h4M18 19h-4" stroke="var(--accent-3)" stroke-width="1.5" stroke-dasharray="2 2"/>
+						<circle cx="22" cy="8" r="3" stroke="var(--accent-3)" stroke-width="1.5" opacity="0.5"/>
+					</svg>
+				</div>
+				<h3 class="expertise__card-title">Marketing Automation</h3>
+				<p class="expertise__card-desc">I build the connective tissue between platforms. Automated reporting dashboards, real-time budget allocation, creative rotation pipelines, and Salesforce integration — all orchestrated to eliminate manual work.</p>
+				<div class="expertise__tags">
+					<span>n8n / Zapier</span><span>Salesforce</span><span>Looker</span><span>Tableau</span><span>Python</span><span>API Integrations</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
-        .nav-links a:hover, .nav-links a:focus {
-            color: #fff;
-            text-shadow: 0 0 8px #fff, 0 0 16px #a18ff7;
-        }
+<!-- ═══════════════════════ RESULTS ═══════════════════════ -->
+<section class="section results" id="results">
+	<div class="section__container">
+		<div class="section__header fade-up">
+			<span class="section__tag">Impact</span>
+			<h2 class="section__title">Numbers that <span class="gradient-text">compound.</span></h2>
+		</div>
 
-        .nav-links a:hover::after, .nav-links a:focus::after {
-            left: 0;
-            right: 0;
-            opacity: 1;
-        }
+		<div class="results__grid">
+			<div class="result-card fade-up" style="--delay: 0.05s">
+				<div class="result-card__value">$55K → $4.5M</div>
+				<div class="result-card__label">MRR growth in 10 months</div>
+				<div class="result-card__company">MenoLabs — DTC Ecommerce</div>
+			</div>
+			<div class="result-card fade-up" style="--delay: 0.1s">
+				<div class="result-card__value">50%</div>
+				<div class="result-card__label">Increase in qualified leads</div>
+				<div class="result-card__company">Townsquare Media</div>
+			</div>
+			<div class="result-card fade-up" style="--delay: 0.15s">
+				<div class="result-card__value">-40%</div>
+				<div class="result-card__label">Reduction in CPA</div>
+				<div class="result-card__company">Townsquare Media</div>
+			</div>
+			<div class="result-card fade-up" style="--delay: 0.2s">
+				<div class="result-card__value">$1M → $25M+</div>
+				<div class="result-card__label">ARR scaled from scratch</div>
+				<div class="result-card__company">Townsquare Media</div>
+			</div>
+			<div class="result-card fade-up" style="--delay: 0.25s">
+				<div class="result-card__value">15% QoQ</div>
+				<div class="result-card__label">Ad revenue growth</div>
+				<div class="result-card__company">Meta — WhatsApp Ads</div>
+			</div>
+			<div class="result-card fade-up" style="--delay: 0.3s">
+				<div class="result-card__value">7 Channels</div>
+				<div class="result-card__label">Unified growth strategy</div>
+				<div class="result-card__company">Multi-channel integration</div>
+			</div>
+		</div>
+	</div>
+</section>
 
-        /* Hero Section */
-        .hero {
-            padding: 120px 2rem 60px;
-            min-height: 80vh;
-            display: flex;
-            align-items: center;
-            position: relative;
-            overflow: hidden;
-        }
+<!-- ═══════════════════════ EXPERIENCE ═══════════════════════ -->
+<section class="section experience" id="experience">
+	<div class="section__container">
+		<div class="section__header fade-up">
+			<span class="section__tag">Career</span>
+			<h2 class="section__title">Built at the <span class="gradient-text">intersection</span><br/>of tech & marketing.</h2>
+		</div>
 
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: 
-                linear-gradient(45deg, rgba(124, 96, 213, 0.03) 25%, transparent 25%),
-                linear-gradient(-45deg, rgba(124, 96, 213, 0.03) 25%, transparent 25%),
-                linear-gradient(45deg, transparent 75%, rgba(124, 96, 213, 0.03) 75%),
-                linear-gradient(-45deg, transparent 75%, rgba(124, 96, 213, 0.03) 75%);
-            background-size: 10px 10px;
-            background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
-            animation: patternMove 30s linear infinite;
-            opacity: 0.5;
-        }
+		<div class="timeline">
+			<div class="timeline__item fade-up" style="--delay: 0.05s">
+				<div class="timeline__marker"></div>
+				<div class="timeline__content">
+					<span class="timeline__date">2023 — Present</span>
+					<h3 class="timeline__role">Sr. Performance Marketing Manager</h3>
+					<span class="timeline__company">KashKick</span>
+					<p>Leading paid acquisition and data strategy. Building AI-powered creative testing pipelines, Looker analytics infrastructure, and automated reporting systems across Meta, TikTok, and NewsBreak.</p>
+				</div>
+			</div>
+			<div class="timeline__item fade-up" style="--delay: 0.1s">
+				<div class="timeline__marker"></div>
+				<div class="timeline__content">
+					<span class="timeline__date">2020 — 2023</span>
+					<h3 class="timeline__role">VP of Growth & Performance</h3>
+					<span class="timeline__company">Townsquare Media</span>
+					<p>Scaled revenue from $1M to $25M+ ARR. Built and led a team of media buyers, analysts, and creatives. Integrated 7 acquisition channels into a unified growth engine with 50% lead increase and 40% CPA reduction.</p>
+				</div>
+			</div>
+			<div class="timeline__item fade-up" style="--delay: 0.15s">
+				<div class="timeline__marker"></div>
+				<div class="timeline__content">
+					<span class="timeline__date">2018 — 2020</span>
+					<h3 class="timeline__role">Ad Operations Manager</h3>
+					<span class="timeline__company">Meta (Facebook)</span>
+					<p>Managed ad operations for WhatsApp and Facebook Ads across LATAM and North America. Delivered 15% quarterly revenue growth through campaign optimization and market expansion.</p>
+				</div>
+			</div>
+			<div class="timeline__item fade-up" style="--delay: 0.2s">
+				<div class="timeline__marker"></div>
+				<div class="timeline__content">
+					<span class="timeline__date">2015 — 2018</span>
+					<h3 class="timeline__role">Digital Marketing Lead</h3>
+					<span class="timeline__company">Warner Bros. Games</span>
+					<p>Led performance marketing for AAA game launches across PlayStation and Xbox titles. Managed multi-million dollar budgets across paid social, video, and programmatic.</p>
+				</div>
+			</div>
+			<div class="timeline__item fade-up" style="--delay: 0.25s">
+				<div class="timeline__marker"></div>
+				<div class="timeline__content">
+					<span class="timeline__date">2012 — 2015</span>
+					<h3 class="timeline__role">Startup Portfolio</h3>
+					<span class="timeline__company">YC Startups & Early Stage</span>
+					<p>Growth marketing for Willing (YC W15), Datagran, MenoLabs, and other early-stage startups. Built acquisition systems from zero, consistently exceeding ROI targets across SaaS, ecommerce, and fintech.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
-        .hero::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: 
-                radial-gradient(circle at 20% 20%, rgba(124, 96, 213, 0.05) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(90, 74, 209, 0.05) 0%, transparent 50%);
-            pointer-events: none;
-            animation: pulse 12s ease-in-out infinite;
-        }
+<!-- ═══════════════════════ AI LAB ═══════════════════════ -->
+<section class="section ai-lab" id="ai">
+	<div class="section__container">
+		<div class="section__header fade-up">
+			<span class="section__tag">AI Lab</span>
+			<h2 class="section__title">The tools I <span class="gradient-text">build with.</span></h2>
+			<p class="section__subtitle">I don't just use AI — I build AI-native marketing infrastructure. Here's my current stack for generative creative, automation, and analytics.</p>
+		</div>
 
-        @keyframes patternMove {
-            0% {
-                background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.1);
-            }
-            100% {
-                background-position: 20px 20px, 20px 30px, 30px 10px, 10px 20px;
-                transform: scale(1);
-            }
-        }
+		<div class="ai-lab__grid">
+			<div class="ai-lab__card fade-up" style="--delay: 0.05s">
+				<div class="ai-lab__card-header">
+					<span class="ai-lab__card-icon">🧠</span>
+					<h3>LLM Orchestration</h3>
+				</div>
+				<p>Claude & GPT-4 APIs for ad copy generation, audience research, competitive analysis, and automated brief creation. Custom prompt chains that output platform-ready creative at scale.</p>
+				<div class="ai-lab__tech">Claude API · Anthropic SDK · LangChain · Custom Agents</div>
+			</div>
+			<div class="ai-lab__card fade-up" style="--delay: 0.1s">
+				<div class="ai-lab__card-header">
+					<span class="ai-lab__card-icon">🎨</span>
+					<h3>Generative Image</h3>
+				</div>
+				<p>ComfyUI workflows on RunPod for AI-generated ad creatives. SDXL + ControlNet pipelines for brand-consistent image generation. Automated batch processing for creative testing at scale.</p>
+				<div class="ai-lab__tech">ComfyUI · Stable Diffusion XL · ControlNet · RunPod</div>
+			</div>
+			<div class="ai-lab__card fade-up" style="--delay: 0.15s">
+				<div class="ai-lab__card-header">
+					<span class="ai-lab__card-icon">🎬</span>
+					<h3>AI Video Production</h3>
+				</div>
+				<p>AI-generated UGC-style video ads using avatar and voice cloning tools. Automated video assembly pipelines that produce platform-optimized creatives for TikTok, Reels, and YouTube Shorts.</p>
+				<div class="ai-lab__tech">AI Avatars · Voice Cloning · Automated Editing · UGC Style</div>
+			</div>
+			<div class="ai-lab__card fade-up" style="--delay: 0.2s">
+				<div class="ai-lab__card-header">
+					<span class="ai-lab__card-icon">⚡</span>
+					<h3>Automation & Data</h3>
+				</div>
+				<p>n8n and Zapier workflows connecting ad platforms, CRMs, and analytics. Real-time Slack/Telegram notifications, automated budget pacing, and Salesforce data pipelines for closed-loop attribution.</p>
+				<div class="ai-lab__tech">n8n · Zapier · Python · Salesforce · Looker · Ringba</div>
+			</div>
+		</div>
+	</div>
+</section>
 
-        @keyframes pulse {
-            0%, 100% {
-                opacity: 0.5;
-                transform: scale(1) rotate(0deg);
-            }
-            50% {
-                opacity: 0.7;
-                transform: scale(1.1) rotate(1deg);
-            }
+<!-- ═══════════════════════ CONTACT ═══════════════════════ -->
+<section class="section contact" id="contact">
+	<div class="section__container contact__inner">
+		<div class="contact__content fade-up">
+			<span class="section__tag">Get in Touch</span>
+			<h2 class="section__title">Let's build your<br /><span class="gradient-text">growth engine.</span></h2>
+			<p class="contact__desc">Whether you need a fractional CMO, a performance marketing audit, or an AI-powered creative pipeline — I'd love to hear about your challenge.</p>
+
+			<div class="contact__links">
+				<a href="mailto:info@johangarcia.com" class="contact__link">
+					<svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2" y="4" width="16" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M2 6l8 5 8-5" stroke="currentColor" stroke-width="1.5"/></svg>
+					info@johangarcia.com
+				</a>
+				<a href="https://www.linkedin.com/in/johangarcia" target="_blank" rel="noopener" class="contact__link">
+					<svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2" y="2" width="16" height="16" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M6 9v5M6 6v.01M10 14v-3.5a1.5 1.5 0 113 0V14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+					linkedin.com/in/johangarcia
+				</a>
+			</div>
+		</div>
+
+		<form action="https://formspree.io/f/xvgpeygk" method="POST" class="contact__form fade-up" style="--delay: 0.15s">
+			<div class="form__group">
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name" required placeholder="Your name" />
+			</div>
+			<div class="form__group">
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" required placeholder="you@company.com" />
+			</div>
+			<div class="form__group form__group--full">
+				<label for="message">Message</label>
+				<textarea id="message" name="message" rows="4" required placeholder="Tell me about your project or challenge..."></textarea>
+			</div>
+			<button type="submit" class="btn btn--primary btn--full">
+				<span>Send Message</span>
+				<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+			</button>
+		</form>
+	</div>
+</section>
+
+<!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+<footer class="footer">
+	<div class="footer__inner">
+		<span class="footer__logo">JG<span class="nav__logo-dot" style="display:inline-block"></span></span>
+		<span class="footer__copy">© 2025 Johan Garcia. Built with Astro.</span>
+		<div class="footer__links">
+			<a href="https://www.linkedin.com/in/johangarcia" target="_blank" rel="noopener">LinkedIn</a>
+			<a href="mailto:info@johangarcia.com">Email</a>
+		</div>
+	</div>
+</footer>
+
+<!-- ═══════════════════════ STYLES ═══════════════════════ -->
+<style>
+/* ── UTILITIES ───────────────────────────────────── */
+.gradient-text {
+	background: var(--gradient-main);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
 }
 
-.hero-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            gap: 4rem;
-            position: relative;
-            z-index: 1;
-            animation: contentFade 1s ease-out;
-        }
-
-        @keyframes contentFade {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+.section {
+	position: relative;
+	padding: 8rem 1.5rem;
 }
 
-.hero-photo {
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-    object-fit: cover;
-            box-shadow: 
-                0 10px 30px rgba(124, 96, 213, 0.1),
-                0 0 0 5px rgba(124, 96, 213, 0.1),
-                0 0 0 10px rgba(124, 96, 213, 0.05);
-            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-            animation: float 8s ease-in-out infinite;
-            position: relative;
-        }
-
-        .hero-photo::after {
-            content: '';
-            position: absolute;
-            top: -5px;
-            left: -5px;
-            right: -5px;
-            bottom: -5px;
-            border-radius: 50%;
-            background: linear-gradient(45deg, rgba(124, 96, 213, 0.1), transparent);
-            z-index: -1;
-            animation: glow 4s ease-in-out infinite;
-        }
-
-        @keyframes glow {
-            0%, 100% {
-                opacity: 0.5;
-                transform: scale(1);
-            }
-            50% {
-                opacity: 0.8;
-                transform: scale(1.05);
-            }
-        }
-
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0) rotate(0deg);
-            }
-            25% {
-                transform: translateY(-10px) rotate(1deg);
-            }
-            75% {
-                transform: translateY(10px) rotate(-1deg);
-            }
-        }
-
-        .hero-photo:hover {
-            transform: scale(1.02) translateY(-5px) rotate(2deg);
-            border-color: rgba(124, 96, 213, 0.2);
-            box-shadow: 
-                0 15px 40px rgba(124, 96, 213, 0.15),
-                0 0 0 5px rgba(124, 96, 213, 0.2),
-                0 0 0 10px rgba(124, 96, 213, 0.1);
+.section__container {
+	max-width: 1120px;
+	margin: 0 auto;
 }
 
-.hero-text {
-            animation: textSlide 1s ease-out 0.3s both;
-        }
-
-        @keyframes textSlide {
-            from {
-                opacity: 0;
-                transform: translateX(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
-        .hero-text h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-            color: #2d3436;
-            line-height: 1.2;
-        }
-
-        .hero-text p {
-            font-size: 1.1rem;
-            color: #636e72;
-            margin-bottom: 2rem;
-        }
-
-        .hero .button {
-            background: #7c60d5;
-            color: white;
-            font-weight: 600;
-            padding: 1rem 2rem;
-        border-radius: 8px;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            display: inline-block;
-            box-shadow: 0 4px 15px rgba(124, 96, 213, 0.2);
-    }
-
-        .hero .button:hover {
-            background: #5a4ad1;
-        transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(124, 96, 213, 0.3);
-        }
-
-        /* Secciones generales */
-        section {
-            padding: 80px 2rem;
-            background: none;
-            border-radius: 0;
-            box-shadow: none;
-            overflow: visible;
-        }
-
-        section h2 {
-            font-size: 2.5rem;
-        text-align: center;
-            margin-bottom: 3rem;
-            color: #2d3436;
-        }
-
-        /* About Section */
-        .about {
-            position: relative;
-            background: #f5f6ff;
-            backdrop-filter: blur(14px) saturate(1.3);
-            -webkit-backdrop-filter: blur(14px) saturate(1.3);
-            border-radius: 36px;
-            box-shadow: 0 8px 40px 0 rgba(124, 96, 213, 0.13), 0 1.5px 8px 0 rgba(58,141,222,0.08);
-            border: 1.5px solid rgba(124,96,213,0.10);
-            overflow: hidden;
-            margin-bottom: 56px;
-            max-width: 1200px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .about::before, .services::before, .case-studies::before, .testimonials::before, .contact::before {
-            content: '';
-            position: absolute;
-            top: -30px;
-            right: 0;
-            width: 120px;
-            height: 120px;
-            background: radial-gradient(circle, rgba(255,255,255,0.13) 0%, transparent 80%);
-            z-index: 1;
-            pointer-events: none;
-        }
-
-        .about::after, .services::after, .case-studies::after, .testimonials::after, .contact::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 90px;
-            height: 90px;
-            background: radial-gradient(circle, rgba(124,96,213,0.05) 0%, transparent 80%);
-            z-index: 1;
-            pointer-events: none;
-        }
-
-        .about > *, .services > *, .case-studies > *, .testimonials > *, .contact > * {
-            position: relative;
-            z-index: 2;
-        }
-
-        .about-content {
-            position: relative;
-            z-index: 1;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .about h2 {
-        text-align: center;
-            margin-bottom: 3rem;
-            color: #2d3436;
-            font-size: 2.5rem;
-    }
-
-        .about-header {
-        text-align: center;
-            margin-bottom: 4rem;
-        }
-
-        .about h3 {
-            font-size: 2rem;
-            color: #7c60d5;
-            margin-bottom: 1.5rem;
-            font-weight: 700;
-        }
-
-        .about h4 {
-            font-size: 1.5rem;
-            color: #2d3436;
-            margin-bottom: 2rem;
-            text-align: center;
-        }
-
-        .about p {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: #636e72;
-            margin-bottom: 1.5rem;
-        }
-
-        .achievements {
-            margin: 3rem 0;
-        }
-
-        .achievements ul {
-            list-style: none;
-        padding: 0;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .achievements li {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .achievements li:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .achievements li strong {
-            display: block;
-            color: #7c60d5;
-            font-size: 1.2rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .achievements li p {
-            margin: 0;
-            font-size: 1rem;
-        }
-
-        .about-footer {
-    text-align: center;
-            margin-top: 3rem;
-            padding-top: 2rem;
-            border-top: 1px solid rgba(124, 96, 213, 0.1);
-        }
-
-        .about-footer p {
-            font-size: 1.2rem;
-            font-weight: 500;
-            color: #2d3436;
-        }
-
-        @media (max-width: 768px) {
-            .about {
-                padding: 60px 1rem;
-            }
-
-            .about h3 {
-                font-size: 1.8rem;
-            }
-
-            .about h4 {
-                font-size: 1.3rem;
-            }
-
-            .achievements ul {
-                grid-template-columns: 1fr;
-            }
-
-            .about-footer p {
-                font-size: 1.1rem;
-            }
-        }
-
-        /* Services Section */
-        .services {
-            position: relative;
-            background: #f5f6ff;
-            backdrop-filter: blur(14px) saturate(1.3);
-            -webkit-backdrop-filter: blur(14px) saturate(1.3);
-            border-radius: 36px;
-            box-shadow: 0 8px 40px 0 rgba(124, 96, 213, 0.13), 0 1.5px 8px 0 rgba(58,141,222,0.08);
-            border: 1.5px solid rgba(124,96,213,0.10);
-            overflow: hidden;
-            margin-bottom: 56px;
-            max-width: 1200px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .services::before, .case-studies::before, .testimonials::before {
-            content: '';
-            position: absolute;
-            top: -30px;
-            right: -60px;
-            width: 180px;
-            height: 180px;
-            background: radial-gradient(circle, rgba(255,255,255,0.22) 0%, transparent 80%);
-            z-index: 1;
-            pointer-events: none;
-        }
-
-        .services::after, .case-studies::after, .testimonials::after {
-            content: '';
-            position: absolute;
-            bottom: -40px;
-            left: -60px;
-            width: 120px;
-            height: 120px;
-            background: radial-gradient(circle, rgba(124,96,213,0.10) 0%, transparent 80%);
-            z-index: 1;
-            pointer-events: none;
-        }
-
-        .services > *, .case-studies > *, .testimonials > * {
-            position: relative;
-            z-index: 2;
-        }
-
-        .service-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .service {
-            background: white;
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease;
-        }
-
-        .service:hover {
-            transform: translateY(-5px);
-        }
-
-        .service h3 {
-            color: #7c60d5;
-            margin-bottom: 1rem;
-        }
-
-        /* Case Studies Section */
-        .case-studies {
-            position: relative;
-            background: #f5f6ff;
-            backdrop-filter: blur(14px) saturate(1.3);
-            -webkit-backdrop-filter: blur(14px) saturate(1.3);
-            border-radius: 36px;
-            box-shadow: 0 8px 40px 0 rgba(124, 96, 213, 0.13), 0 1.5px 8px 0 rgba(58,141,222,0.08);
-            border: 1.5px solid rgba(124,96,213,0.10);
-            overflow: hidden;
-            margin-bottom: 56px;
-            max-width: 1200px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .case-study-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .case-study {
-            background: white;
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease;
-        }
-
-        .case-study:hover {
-            transform: translateY(-5px);
-        }
-
-        /* Testimonials Section */
-        .testimonials {
-    position: relative;
-            background: #f5f6ff;
-            backdrop-filter: blur(14px) saturate(1.3);
-            -webkit-backdrop-filter: blur(14px) saturate(1.3);
-            border-radius: 36px;
-            box-shadow: 0 8px 40px 0 rgba(124, 96, 213, 0.13), 0 1.5px 8px 0 rgba(58,141,222,0.08);
-            border: 1.5px solid rgba(124,96,213,0.10);
-            overflow: hidden;
-            margin-bottom: 56px;
-            max-width: 1200px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .testimonial-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            max-width: 1200px;
-    margin: 0 auto;
+.section__header {
+	margin-bottom: 4rem;
 }
 
-        .testimonial {
-    background: white;
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-        }
+.section__tag {
+	display: inline-block;
+	font-family: var(--font-mono);
+	font-size: 0.75rem;
+	font-weight: 500;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	color: var(--accent);
+	margin-bottom: 1rem;
+	padding: 0.35rem 0.8rem;
+	background: var(--accent-glow);
+	border: 1px solid rgba(0, 229, 160, 0.15);
+	border-radius: 100px;
+}
 
-        .testimonial p {
-            font-style: italic;
-            color: #636e72;
-            margin-bottom: 1rem;
-        }
+.section__title {
+	font-size: clamp(2rem, 5vw, 3.2rem);
+	font-weight: 800;
+	line-height: 1.15;
+	letter-spacing: -0.03em;
+}
 
-        .testimonial cite {
-            color: #7c60d5;
-            font-weight: 600;
-        }
+.section__subtitle {
+	color: var(--text-muted);
+	font-size: 1.1rem;
+	max-width: 600px;
+	margin-top: 1rem;
+	line-height: 1.7;
+}
 
-        /* Contact Section */
-        .contact {
-            position: relative;
-            background: none;
-            border-radius: 0;
-            box-shadow: none;
-            border: none;
-            overflow: visible;
-            margin-bottom: 56px;
-            text-align: center;
-            max-width: 1200px;
-            margin-left: auto;
-            margin-right: auto;
-        }
+/* ── SCROLL ANIMATIONS ──────────────────────────── */
+.fade-up {
+	opacity: 0;
+	transform: translateY(30px);
+	transition: opacity 0.7s var(--ease-out-expo), transform 0.7s var(--ease-out-expo);
+	transition-delay: var(--delay, 0s);
+}
 
-        .contact-info {
-            max-width: 600px;
-            margin: 0 auto;
-        }
+.fade-up.visible {
+	opacity: 1;
+	transform: translateY(0);
+}
 
-        .contact-info p {
-            margin: 1rem 0;
-            font-size: 1.1rem;
-        }
+/* ── BUTTONS ─────────────────────────────────────── */
+.btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	font-family: var(--font-display);
+	font-weight: 600;
+	font-size: 0.95rem;
+	padding: 0.85rem 1.6rem;
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+	transition: all 0.25s var(--ease-out-expo);
+}
 
-        .contact-info a {
-            color: #7c60d5;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
+.btn--primary {
+	background: var(--accent);
+	color: var(--bg);
+	box-shadow: 0 0 0 0 var(--accent-glow), 0 4px 20px rgba(0, 229, 160, 0.2);
+}
 
-        .contact-info a:hover {
-            color: #5a4ad1;
-            text-decoration: underline;
-        }
+.btn--primary:hover {
+	box-shadow: 0 0 0 4px var(--accent-glow), 0 8px 30px rgba(0, 229, 160, 0.3);
+	transform: translateY(-2px);
+}
 
-        /* Footer */
-        footer {
-            background: #2d3436;
-            color: white;
-            text-align: center;
-            padding: 2rem;
-        }
+.btn--ghost {
+	background: transparent;
+	color: var(--text);
+	border: 1px solid var(--border);
+}
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .hero-content {
-                flex-direction: column;
-                text-align: center;
-                gap: 2rem;
-            }
+.btn--ghost:hover {
+	border-color: var(--accent);
+	color: var(--accent);
+}
 
-            .hero-photo {
-                width: 250px;
-                height: 250px;
-            }
+.btn--full {
+	width: 100%;
+	justify-content: center;
+}
 
-            .hero-text h1 {
-                font-size: 2rem;
-            }
+/* ── NAV ─────────────────────────────────────────── */
+.nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	padding: 1rem 1.5rem;
+	transition: background 0.3s, box-shadow 0.3s, backdrop-filter 0.3s;
+}
 
-            .nav-links {
-                display: none;
-            }
+.nav.scrolled {
+	background: rgba(8, 9, 13, 0.85);
+	backdrop-filter: blur(20px) saturate(1.3);
+	-webkit-backdrop-filter: blur(20px) saturate(1.3);
+	box-shadow: 0 1px 0 var(--border);
+}
 
-            .nav-links.show {
-        display: flex;
-        flex-direction: column;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background: linear-gradient(135deg, rgba(124, 96, 213, 0.95) 0%, rgba(90, 74, 209, 0.85) 100%);
-                backdrop-filter: blur(18px) saturate(1.2);
-                -webkit-backdrop-filter: blur(18px) saturate(1.2);
-                padding: 50px 2rem 2rem;
-                box-shadow: -8px 0 32px rgba(90, 74, 209, 0.18);
-                animation: slideIn 0.3s ease-in-out;
-                overflow-y: auto;
-                z-index: 1000;
-                border-radius: 24px;
-            }
+.nav__inner {
+	max-width: 1120px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
 
-            .menu-toggle {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                width: 48px;
-                height: 40px;
-                background: transparent;
-                border: none;
-                cursor: pointer;
-                padding: 8px;
-                z-index: 1001;
-                position: fixed;
-                top: 20px;
-                right: 20px;
-                border-radius: 12px;
-                transition: background 0.2s;
-            }
+.nav__logo {
+	display: flex;
+	align-items: center;
+	gap: 0.25rem;
+	font-weight: 800;
+	font-size: 1.3rem;
+	letter-spacing: -0.02em;
+}
 
-            .menu-toggle:hover, .menu-toggle:focus {
-                background: rgba(124, 96, 213, 0.15);
-            }
+.nav__logo-dot {
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: var(--accent);
+	box-shadow: 0 0 8px var(--accent);
+}
 
-            .menu-toggle span {
-                width: 100%;
-                height: 6px;
-                background: white;
-                border-radius: 6px;
-                transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-                margin-bottom: 7px;
-            }
+.nav__links {
+	display: flex;
+	align-items: center;
+	gap: 0.25rem;
+}
 
-            .menu-toggle span:last-child {
-                margin-bottom: 0;
-            }
+.nav__link {
+	font-size: 0.88rem;
+	font-weight: 500;
+	color: var(--text-muted);
+	padding: 0.5rem 0.9rem;
+	border-radius: 8px;
+	transition: color 0.2s, background 0.2s;
+}
 
-            .menu-toggle.active span:nth-child(1) {
-                transform: translateY(9px) rotate(45deg);
-            }
+.nav__link:hover {
+	color: var(--text);
+	background: rgba(255,255,255,0.04);
+}
 
-            .menu-toggle.active span:nth-child(2) {
-                opacity: 0;
-            }
+.nav__link--cta {
+	color: var(--bg);
+	background: var(--accent);
+	font-weight: 600;
+	margin-left: 0.5rem;
+}
 
-            .menu-toggle.active span:nth-child(3) {
-                transform: translateY(-9px) rotate(-45deg);
-            }
+.nav__link--cta:hover {
+	background: var(--accent-bright);
+	color: var(--bg);
+}
 
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                background: linear-gradient(135deg, rgba(124, 96, 213, 0.95) 0%, rgba(90, 74, 209, 0.85) 100%);
-                backdrop-filter: blur(18px) saturate(1.2);
-                -webkit-backdrop-filter: blur(18px) saturate(1.2);
-                position: fixed;
-                top: 0;
-                right: 0;
-                height: 100vh;
-                width: 240px;
-                padding: 50px 2rem 2rem;
-                box-shadow: -8px 0 32px rgba(90, 74, 209, 0.18);
-                animation: slideIn 0.3s ease-in-out;
-                overflow-y: auto;
-                z-index: 1000;
-                border-radius: 24px;
-            }
+.nav__toggle {
+	display: none;
+	flex-direction: column;
+	gap: 5px;
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 6px;
+}
 
-            .nav-links::after {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 4px;
-                height: 100%;
-                background: linear-gradient(to bottom, #a18ff7, #3a8dde);
-            }
+.nav__toggle span {
+	display: block;
+	width: 22px;
+	height: 2px;
+	background: var(--text);
+	border-radius: 2px;
+	transition: all 0.3s;
+}
 
-            .nav-links.show {
-	  display: flex;
-            }
+/* ── HERO ────────────────────────────────────────── */
+.hero {
+	min-height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	gap: 4rem;
+	max-width: 1120px;
+	margin: 0 auto;
+	padding: 8rem 1.5rem 4rem;
+	position: relative;
+}
 
-            .nav-links li {
-                margin: 1rem 0;
-                opacity: 0;
-                transform: translateX(20px);
-                animation: fadeInRight 0.3s ease forwards;
-                position: relative;
-            }
+.hero__grid-bg {
+	position: fixed;
+	inset: 0;
+	background-image:
+		linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+		linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+	background-size: 60px 60px;
+	pointer-events: none;
+	z-index: -2;
+	mask-image: radial-gradient(ellipse 80% 70% at 50% 30%, black 30%, transparent 100%);
+	-webkit-mask-image: radial-gradient(ellipse 80% 70% at 50% 30%, black 30%, transparent 100%);
+}
 
-            .nav-links li::before {
-                display: none;
-            }
+.hero__orbs {
+	position: fixed;
+	inset: 0;
+	pointer-events: none;
+	z-index: -1;
+	overflow: hidden;
+}
 
-            .nav-links li:hover::before {
-                display: none;
-            }
+.hero__orb {
+	position: absolute;
+	border-radius: 50%;
+	filter: blur(100px);
+	opacity: 0.4;
+	animation: orbFloat 20s ease-in-out infinite;
+}
 
-            .nav-links a {
-                display: flex;
-                align-items: center;
-                padding: 1rem 1.5rem;
-                font-size: 1.1rem;
-	            border-radius: 8px; 
-                color: white;
-                text-decoration: none;
-                transition: all 0.3s ease;
-                background: rgba(255, 255, 255, 0.05);
-                border: 1px solid rgba(255, 255, 255, 0.1);
-                position: relative;
-                overflow: hidden;
-            }
+.hero__orb--1 {
+	width: 500px;
+	height: 500px;
+	background: radial-gradient(circle, rgba(0, 229, 160, 0.12), transparent 70%);
+	top: -10%;
+	left: -10%;
+}
 
-            .nav-links a::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: linear-gradient(120deg, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0.38) 60%, rgba(255,255,255,0.12) 100%);
-                transform: skewX(-25deg) translateX(-100%);
-                opacity: 0;
-                transition: transform 0.5s cubic-bezier(0.4,0,0.2,1), opacity 0.2s;
-                pointer-events: none;
-                z-index: 2;
-                border-radius: inherit;
-            }
+.hero__orb--2 {
+	width: 400px;
+	height: 400px;
+	background: radial-gradient(circle, rgba(99, 102, 241, 0.1), transparent 70%);
+	top: 40%;
+	right: -5%;
+	animation-delay: -7s;
+}
 
-            .nav-links a:hover::before, .nav-links a:focus::before {
-                transform: skewX(-25deg) translateX(100%);
-                opacity: 1;
-                transition: transform 0.5s cubic-bezier(0.4,0,0.2,1), opacity 0.2s;
-            }
+.hero__orb--3 {
+	width: 300px;
+	height: 300px;
+	background: radial-gradient(circle, rgba(244, 114, 182, 0.08), transparent 70%);
+	bottom: 10%;
+	left: 30%;
+	animation-delay: -14s;
+}
 
-            .nav-links a:hover {
-                background: rgba(255, 255, 255, 0.15);
-                transform: translateX(5px);
-                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-            }
+@keyframes orbFloat {
+	0%, 100% { transform: translate(0, 0) scale(1); }
+	33% { transform: translate(30px, -20px) scale(1.05); }
+	66% { transform: translate(-20px, 15px) scale(0.95); }
+}
 
-            /* Footer del menú */
-            .nav-links::before {
-                content: '© 2024';
-                position: absolute;
-                bottom: 20px;
-                left: 50%;
-                transform: translateX(-50%);
-                color: rgba(255, 255, 255, 0.5);
-                font-size: 0.8rem;
-            }
+.hero__badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	font-family: var(--font-mono);
+	font-size: 0.78rem;
+	color: var(--accent);
+	padding: 0.45rem 1rem;
+	background: var(--accent-glow);
+	border: 1px solid rgba(0, 229, 160, 0.12);
+	border-radius: 100px;
+	margin-bottom: 1.5rem;
+}
 
-            /* Estilo para el scrollbar */
-            .nav-links::-webkit-scrollbar {
-                width: 5px;
-            }
+.hero__badge-dot {
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: var(--accent);
+	animation: pulse-dot 2s ease-in-out infinite;
+}
 
-            .nav-links::-webkit-scrollbar-track {
-                background: rgba(255, 255, 255, 0.1);
-            }
+@keyframes pulse-dot {
+	0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(0, 229, 160, 0.4); }
+	50% { opacity: 0.7; box-shadow: 0 0 0 6px rgba(0, 229, 160, 0); }
+}
 
-            .nav-links::-webkit-scrollbar-thumb {
-                background: rgba(255, 255, 255, 0.3);
-                border-radius: 5px;
-            }
+.hero__title {
+	font-size: clamp(2.5rem, 5.5vw, 4rem);
+	font-weight: 900;
+	line-height: 1.08;
+	letter-spacing: -0.04em;
+	margin-bottom: 1.5rem;
+}
 
-            .nav-links::-webkit-scrollbar-thumb:hover {
-                background: rgba(255, 255, 255, 0.5);
-            }
+.hero__subtitle {
+	font-size: 1.1rem;
+	color: var(--text-muted);
+	max-width: 520px;
+	line-height: 1.75;
+	margin-bottom: 2rem;
+}
 
-            body.menu-open {
-                overflow-y: scroll;
-            }
+.hero__subtitle strong {
+	color: var(--text);
+	font-weight: 600;
+}
 
-            .hero-content {
-                padding-top: 60px; /* Espacio para el botón del menú */
-            }
+.hero__actions {
+	display: flex;
+	gap: 1rem;
+	margin-bottom: 3rem;
+}
 
-            .nav-links a::after {
-                display: none !important;
-            }
-        }
+.hero__stats {
+	display: flex;
+	gap: 2.5rem;
+}
 
-        @keyframes fadeInRight {
-            from {
-                opacity: 0;
-                transform: translateX(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
+.hero__stat {
+	display: flex;
+	flex-direction: column;
+}
 
-        @media (min-width: 769px) {
-            .nav-links {
-                display: flex !important;
-                flex-direction: row;
-                align-items: center;
-                gap: 2.5rem;
-                background: linear-gradient(90deg, rgba(124,96,213,0.18) 0%, rgba(58,141,222,0.18) 100%);
-                backdrop-filter: blur(8px) saturate(1.2);
-                -webkit-backdrop-filter: blur(8px) saturate(1.2);
-                border-radius: 2rem;
-                box-shadow: 0 2px 16px 0 rgba(124, 96, 213, 0.10);
-                border: 3px solid #b7aefa;
-                padding: 0.5rem 2.5rem;
-                margin: 0 auto;
-                position: relative;
-                width: fit-content;
-            }
-            .nav-links a {
-                color: #fff;
-                font-size: 1.25rem;
-                font-weight: 600;
-                padding: 0.7rem 1.2rem;
-                border-radius: 1.5rem;
-                background: transparent;
-                border: none;
-                transition: color 0.3s;
-                box-shadow: none;
-                text-shadow: 0 1px 4px rgba(124,96,213,0.08);
-                letter-spacing: 0.5px;
-                position: relative;
-                text-decoration: none;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                height: 100%;
-            }
-            .nav-links a::after {
-                content: '';
-                position: absolute;
-                left: 50%;
-                right: 50%;
-                bottom: 2px;
-                height: 2.5px;
-                background: linear-gradient(90deg, #fff 0%, #7c60d5 100%);
-                border-radius: 2px;
-                opacity: 0;
-                transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
-            }
-            .nav-links a:hover, .nav-links a:focus {
-                color: #fff;
-            }
-            .nav-links a:hover::after, .nav-links a:focus::after {
-                left: 0;
-                right: 0;
-                opacity: 1;
-            }
-        }
+.hero__stat-value {
+	font-size: 1.5rem;
+	font-weight: 800;
+	letter-spacing: -0.03em;
+	background: var(--gradient-main);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
 
-        .about, .services, .case-studies, .contact {
-            width: 80vw !important;
-            max-width: 1200px !important;
-            margin-left: auto !important;
-            margin-right: auto !important;
-        }
-    </style>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const toggleButton = document.querySelector('.menu-toggle');
-            const navLinks = document.querySelector('.nav-links');
-            const body = document.body;
-    
-            if (toggleButton && navLinks) {
-                toggleButton.addEventListener('click', () => {
-                    toggleButton.classList.toggle('active');
-                    navLinks.classList.toggle('show');
-                    body.classList.toggle('menu-open');
-                });
+.hero__stat-label {
+	font-size: 0.78rem;
+	color: var(--text-dim);
+	font-weight: 500;
+	margin-top: 0.15rem;
+}
 
-                // Cerrar menú al hacer clic en un enlace
-                const navItems = navLinks.querySelectorAll('a');
-                navItems.forEach(item => {
-                    item.addEventListener('click', () => {
-                        toggleButton.classList.remove('active');
-                        navLinks.classList.remove('show');
-                        body.classList.remove('menu-open');
-                    });
-                });
+/* ── TERMINAL ────────────────────────────────────── */
+.hero__terminal {
+	background: var(--bg-card);
+	border: 1px solid var(--border);
+	border-radius: 14px;
+	overflow: hidden;
+	box-shadow:
+		0 0 0 1px rgba(255,255,255,0.03),
+		0 20px 60px rgba(0,0,0,0.4),
+		0 0 80px rgba(0, 229, 160, 0.03);
+	transition: box-shadow 0.5s;
+}
 
-                // Cerrar menú al hacer clic fuera
+.hero__terminal:hover {
+	box-shadow:
+		0 0 0 1px rgba(0, 229, 160, 0.1),
+		0 25px 70px rgba(0,0,0,0.5),
+		0 0 100px rgba(0, 229, 160, 0.06);
+}
 
-            }
-        });
-    </script>
-</body>
-</html>
+.terminal__header {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	padding: 0.85rem 1rem;
+	background: rgba(255,255,255,0.02);
+	border-bottom: 1px solid var(--border);
+}
+
+.terminal__dot {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+}
+
+.terminal__dot--r { background: #ff5f57; }
+.terminal__dot--y { background: #febc2e; }
+.terminal__dot--g { background: #28c840; }
+
+.terminal__title {
+	font-family: var(--font-mono);
+	font-size: 0.72rem;
+	color: var(--text-dim);
+	margin-left: 0.5rem;
+}
+
+.terminal__body {
+	padding: 1.25rem;
+	font-family: var(--font-mono);
+	font-size: 0.82rem;
+	line-height: 1.85;
+}
+
+.terminal__line {
+	display: block;
+	min-height: 1.85em;
+}
+
+.t-kw { color: #c678dd; }
+.t-mod { color: #e5c07b; }
+.t-fn { color: #61afef; }
+.t-str { color: #98c379; }
+.t-key { color: #e06c75; }
+.t-bool { color: #d19a66; }
+.t-num { color: #d19a66; }
+.t-cm { color: var(--text-dim); }
+
+.typing-cursor::after {
+	content: '▊';
+	color: var(--accent);
+	animation: blink 1s step-end infinite;
+	margin-left: 2px;
+}
+
+@keyframes blink {
+	50% { opacity: 0; }
+}
+
+/* ── EXPERTISE ───────────────────────────────────── */
+.expertise__grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.5rem;
+}
+
+.expertise__card {
+	background: var(--bg-card);
+	border: 1px solid var(--border);
+	border-radius: 16px;
+	padding: 2rem;
+	transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.expertise__card:hover {
+	border-color: rgba(0, 229, 160, 0.15);
+	box-shadow: 0 0 40px rgba(0, 229, 160, 0.04);
+	transform: translateY(-4px);
+}
+
+.expertise__card:nth-child(2):hover {
+	border-color: rgba(99, 102, 241, 0.2);
+	box-shadow: 0 0 40px rgba(99, 102, 241, 0.04);
+}
+
+.expertise__card:nth-child(3):hover {
+	border-color: rgba(244, 114, 182, 0.2);
+	box-shadow: 0 0 40px rgba(244, 114, 182, 0.04);
+}
+
+.expertise__icon {
+	margin-bottom: 1.5rem;
+	width: 56px;
+	height: 56px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--accent-glow);
+	border-radius: 14px;
+	border: 1px solid rgba(0, 229, 160, 0.1);
+}
+
+.expertise__card:nth-child(2) .expertise__icon {
+	background: var(--accent-2-glow);
+	border-color: rgba(99, 102, 241, 0.1);
+}
+
+.expertise__card:nth-child(3) .expertise__icon {
+	background: rgba(244, 114, 182, 0.1);
+	border-color: rgba(244, 114, 182, 0.1);
+}
+
+.expertise__card-title {
+	font-size: 1.25rem;
+	font-weight: 700;
+	margin-bottom: 0.75rem;
+	letter-spacing: -0.02em;
+}
+
+.expertise__card-desc {
+	color: var(--text-muted);
+	font-size: 0.92rem;
+	line-height: 1.7;
+	margin-bottom: 1.5rem;
+}
+
+.expertise__tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+}
+
+.expertise__tags span {
+	font-family: var(--font-mono);
+	font-size: 0.7rem;
+	padding: 0.3rem 0.6rem;
+	background: rgba(255,255,255,0.04);
+	border: 1px solid var(--border);
+	border-radius: 6px;
+	color: var(--text-dim);
+	letter-spacing: 0.02em;
+}
+
+/* ── RESULTS ─────────────────────────────────────── */
+.results {
+	background: var(--bg-elevated);
+	border-top: 1px solid var(--border);
+	border-bottom: 1px solid var(--border);
+}
+
+.results__grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.25rem;
+}
+
+.result-card {
+	background: var(--bg-card);
+	border: 1px solid var(--border);
+	border-radius: 14px;
+	padding: 1.75rem;
+	transition: border-color 0.3s, transform 0.3s;
+}
+
+.result-card:hover {
+	border-color: rgba(0, 229, 160, 0.12);
+	transform: translateY(-3px);
+}
+
+.result-card__value {
+	font-size: 1.8rem;
+	font-weight: 800;
+	letter-spacing: -0.03em;
+	background: var(--gradient-main);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	margin-bottom: 0.3rem;
+}
+
+.result-card__label {
+	font-size: 0.95rem;
+	color: var(--text);
+	font-weight: 500;
+	margin-bottom: 0.5rem;
+}
+
+.result-card__company {
+	font-family: var(--font-mono);
+	font-size: 0.72rem;
+	color: var(--text-dim);
+	letter-spacing: 0.03em;
+}
+
+/* ── TIMELINE ────────────────────────────────────── */
+.timeline {
+	position: relative;
+	padding-left: 2.5rem;
+}
+
+.timeline::before {
+	content: '';
+	position: absolute;
+	left: 7px;
+	top: 8px;
+	bottom: 8px;
+	width: 1px;
+	background: linear-gradient(to bottom, var(--accent), var(--accent-2), var(--accent-3), transparent);
+}
+
+.timeline__item {
+	position: relative;
+	padding-bottom: 3rem;
+}
+
+.timeline__item:last-child {
+	padding-bottom: 0;
+}
+
+.timeline__marker {
+	position: absolute;
+	left: -2.5rem;
+	top: 8px;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background: var(--bg);
+	border: 2px solid var(--accent);
+	box-shadow: 0 0 12px var(--accent-glow);
+	z-index: 1;
+}
+
+.timeline__item:nth-child(2) .timeline__marker { border-color: #4ade80; }
+.timeline__item:nth-child(3) .timeline__marker { border-color: var(--accent-2); }
+.timeline__item:nth-child(4) .timeline__marker { border-color: #a78bfa; }
+.timeline__item:nth-child(5) .timeline__marker { border-color: var(--accent-3); }
+
+.timeline__date {
+	font-family: var(--font-mono);
+	font-size: 0.75rem;
+	color: var(--accent);
+	letter-spacing: 0.05em;
+}
+
+.timeline__role {
+	font-size: 1.3rem;
+	font-weight: 700;
+	margin: 0.3rem 0;
+	letter-spacing: -0.02em;
+}
+
+.timeline__company {
+	font-size: 0.9rem;
+	color: var(--text-muted);
+	font-weight: 500;
+	display: block;
+	margin-bottom: 0.5rem;
+}
+
+.timeline__content p {
+	color: var(--text-dim);
+	font-size: 0.92rem;
+	line-height: 1.7;
+	max-width: 600px;
+}
+
+/* ── AI LAB ──────────────────────────────────────── */
+.ai-lab {
+	background: var(--bg-elevated);
+	border-top: 1px solid var(--border);
+	border-bottom: 1px solid var(--border);
+}
+
+.ai-lab__grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1.25rem;
+}
+
+.ai-lab__card {
+	background: var(--bg-card);
+	border: 1px solid var(--border);
+	border-radius: 14px;
+	padding: 2rem;
+	transition: border-color 0.3s, transform 0.3s;
+}
+
+.ai-lab__card:hover {
+	border-color: rgba(0, 229, 160, 0.12);
+	transform: translateY(-3px);
+}
+
+.ai-lab__card-header {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	margin-bottom: 1rem;
+}
+
+.ai-lab__card-icon {
+	font-size: 1.5rem;
+}
+
+.ai-lab__card-header h3 {
+	font-size: 1.15rem;
+	font-weight: 700;
+	letter-spacing: -0.02em;
+}
+
+.ai-lab__card p {
+	color: var(--text-muted);
+	font-size: 0.92rem;
+	line-height: 1.7;
+	margin-bottom: 1.25rem;
+}
+
+.ai-lab__tech {
+	font-family: var(--font-mono);
+	font-size: 0.72rem;
+	color: var(--text-dim);
+	letter-spacing: 0.02em;
+	padding-top: 1rem;
+	border-top: 1px solid var(--border);
+}
+
+/* ── CONTACT ─────────────────────────────────────── */
+.contact__inner {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 4rem;
+	align-items: start;
+}
+
+.contact__desc {
+	color: var(--text-muted);
+	font-size: 1.05rem;
+	line-height: 1.7;
+	margin: 1.25rem 0 2rem;
+}
+
+.contact__links {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+}
+
+.contact__link {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.75rem;
+	color: var(--text-muted);
+	font-size: 0.95rem;
+	transition: color 0.2s;
+}
+
+.contact__link:hover {
+	color: var(--accent);
+}
+
+.contact__form {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+}
+
+.form__group--full {
+	grid-column: 1 / -1;
+}
+
+.form__group label {
+	display: block;
+	font-size: 0.82rem;
+	font-weight: 600;
+	color: var(--text-muted);
+	margin-bottom: 0.4rem;
+}
+
+.form__group input,
+.form__group textarea {
+	width: 100%;
+	padding: 0.8rem 1rem;
+	background: var(--bg-card);
+	border: 1px solid var(--border);
+	border-radius: 10px;
+	color: var(--text);
+	font-family: var(--font-display);
+	font-size: 0.92rem;
+	outline: none;
+	transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form__group input::placeholder,
+.form__group textarea::placeholder {
+	color: var(--text-dim);
+}
+
+.form__group input:focus,
+.form__group textarea:focus {
+	border-color: var(--accent);
+	box-shadow: 0 0 0 3px var(--accent-glow);
+}
+
+.form__group textarea {
+	resize: vertical;
+	min-height: 100px;
+}
+
+.contact__form .btn {
+	grid-column: 1 / -1;
+	margin-top: 0.5rem;
+}
+
+/* ── FOOTER ──────────────────────────────────────── */
+.footer {
+	border-top: 1px solid var(--border);
+	padding: 2rem 1.5rem;
+}
+
+.footer__inner {
+	max-width: 1120px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer__logo {
+	font-weight: 800;
+	font-size: 1.1rem;
+}
+
+.footer__copy {
+	font-size: 0.8rem;
+	color: var(--text-dim);
+}
+
+.footer__links {
+	display: flex;
+	gap: 1.5rem;
+}
+
+.footer__links a {
+	font-size: 0.85rem;
+	color: var(--text-muted);
+	transition: color 0.2s;
+}
+
+.footer__links a:hover { color: var(--accent); }
+
+/* ── RESPONSIVE ──────────────────────────────────── */
+@media (max-width: 900px) {
+	.hero {
+		grid-template-columns: 1fr;
+		min-height: auto;
+		padding-top: 7rem;
+		gap: 3rem;
+	}
+
+	.hero__visual { order: -1; }
+
+	.expertise__grid { grid-template-columns: 1fr; }
+
+	.results__grid { grid-template-columns: repeat(2, 1fr); }
+
+	.ai-lab__grid { grid-template-columns: 1fr; }
+
+	.contact__inner { grid-template-columns: 1fr; gap: 3rem; }
+}
+
+@media (max-width: 640px) {
+	.section { padding: 5rem 1.25rem; }
+
+	.nav__links { display: none; }
+	.nav__links.open {
+		display: flex;
+		flex-direction: column;
+		position: fixed;
+		inset: 0;
+		background: rgba(8, 9, 13, 0.97);
+		backdrop-filter: blur(20px);
+		align-items: center;
+		justify-content: center;
+		gap: 0.5rem;
+		z-index: 99;
+	}
+
+	.nav__links.open .nav__link {
+		font-size: 1.3rem;
+		padding: 0.8rem 1.5rem;
+		color: var(--text);
+	}
+
+	.nav__links.open .nav__link--cta {
+		margin-left: 0;
+		margin-top: 1rem;
+	}
+
+	.nav__toggle { display: flex; z-index: 101; }
+
+	.nav__toggle.open span:first-child {
+		transform: translateY(3.5px) rotate(45deg);
+	}
+	.nav__toggle.open span:last-child {
+		transform: translateY(-3.5px) rotate(-45deg);
+	}
+
+	.hero__stats {
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.hero__stat {
+		flex-direction: row;
+		align-items: baseline;
+		gap: 0.75rem;
+	}
+
+	.hero__actions {
+		flex-direction: column;
+	}
+
+	.results__grid { grid-template-columns: 1fr; }
+
+	.contact__form { grid-template-columns: 1fr; }
+
+	.footer__inner {
+		flex-direction: column;
+		gap: 1rem;
+		text-align: center;
+	}
+}
+</style>
+
+<!-- ═══════════════════════ SCRIPT ═══════════════════════ -->
+<script>
+	// ── Scroll animations (IntersectionObserver)
+	const observer = new IntersectionObserver((entries) => {
+		entries.forEach(entry => {
+			if (entry.isIntersecting) {
+				entry.target.classList.add('visible');
+			}
+		});
+	}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+	document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+	// ── Nav scroll effect
+	const nav = document.getElementById('nav');
+	let ticking = false;
+	window.addEventListener('scroll', () => {
+		if (!ticking) {
+			requestAnimationFrame(() => {
+				nav?.classList.toggle('scrolled', window.scrollY > 40);
+				ticking = false;
+			});
+			ticking = true;
+		}
+	});
+
+	// ── Mobile menu
+	const toggle = document.querySelector('.nav__toggle');
+	const links = document.querySelector('.nav__links');
+
+	toggle?.addEventListener('click', () => {
+		toggle.classList.toggle('open');
+		links?.classList.toggle('open');
+		document.body.style.overflow = links?.classList.contains('open') ? 'hidden' : '';
+	});
+
+	links?.querySelectorAll('.nav__link').forEach(link => {
+		link.addEventListener('click', () => {
+			toggle?.classList.remove('open');
+			links?.classList.remove('open');
+			document.body.style.overflow = '';
+		});
+	});
+</script>
+
+</Layout>
