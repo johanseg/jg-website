@@ -1,0 +1,105 @@
+---
+import '../styles/global.css';
+
+const loop = [
+  { number: '01', verb: 'Ingest', detail: 'Media, creative, CRM and call data' },
+  { number: '02', verb: 'Measure', detail: 'Economics beyond the click' },
+  { number: '03', verb: 'Decide', detail: 'Budget and creative priorities' },
+  { number: '04', verb: 'Act', detail: 'Human-approved execution' },
+  { number: '05', verb: 'Learn', detail: 'Every result sharpens the system' },
+];
+
+const capabilities = [
+  { code: 'PAID / 01', title: 'Paid acquisition', copy: 'Channel strategy and hands-on execution across Meta, Google, YouTube and TikTok.' },
+  { code: 'CREATIVE / 02', title: 'Creative intelligence', copy: 'A measurable taxonomy for hooks, angles, personas, offers and formats.' },
+  { code: 'MEASURE / 03', title: 'Revenue-grade measurement', copy: 'Connect spend to CRM, ecommerce, call and offline outcomes.' },
+  { code: 'DECIDE / 04', title: 'Decision automation', copy: 'AI surfaces the signal; experienced operators approve the move.' },
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Digital Optimizer Agency builds AI-assisted acquisition systems that connect media, creative and revenue." />
+    <meta name="theme-color" content="#05080a" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Digital Optimizer Agency — Acquisition Systems That Learn</title>
+  </head>
+  <body>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <div class="shell nav-inner">
+        <a class="brand" href="#top" aria-label="Digital Optimizer Agency, home"><span class="brand-mark">DO</span><span>Digital Optimizer<span class="agency-label"> / Agency</span></span></a>
+        <div class="nav-links"><a href="#loop">System</a><a href="#capabilities">Capabilities</a><a href="#fit">Fit</a><a class="button nav-cta" href="mailto:roi@johangarcia.com">Brief us ↗</a></div>
+      </div>
+    </nav>
+
+    <main id="top">
+      <section class="hero shell">
+        <div class="grid-field" aria-hidden="true"></div>
+        <div class="hero-copy reveal">
+          <p class="eyebrow">AI-assisted performance marketing</p>
+          <h1 class="display">Acquisition systems that learn from revenue.</h1>
+          <p class="lede">We connect media, creative and offline outcomes—then turn the evidence into the next decision.</p>
+          <div class="button-row"><a class="button" href="mailto:roi@johangarcia.com">Start with the growth problem ↗</a><a class="button secondary" href="#loop">Explore the system ↓</a></div>
+        </div>
+        <aside class="telemetry card reveal" aria-label="System telemetry">
+          <div class="terminal-head"><span></span><span></span><span></span><small>LIVE SIGNAL</small></div>
+          <div class="signal-row"><span>Media spend</span><strong class="online">Connected</strong></div>
+          <div class="signal-row"><span>Creative DNA</span><strong class="online">Mapped</strong></div>
+          <div class="signal-row"><span>Offline truth</span><strong class="online">Resolved</strong></div>
+          <div class="signal-row featured"><span>Next decision</span><strong>Ready for review →</strong></div>
+          <div class="signal-graph" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        </aside>
+      </section>
+
+      <section class="signal-bar" aria-label="Operating principles"><div class="shell"><span>Revenue &gt; platform metrics</span><span>Evidence &gt; opinion</span><span>Systems &gt; tactics</span><span>Human judgment stays in the loop</span></div></section>
+
+      <section class="section shell" id="loop">
+        <div class="section-intro reveal"><div><p class="eyebrow">The optimization loop</p><h2 class="section-title">One system. Five connected moves.</h2></div><p class="lede">The problem is rarely a lack of dashboards. It is the gap between what happened and what the team does next.</p></div>
+        <ol class="loop-list">
+          {loop.map((step) => (<li class="loop-item reveal"><span class="mono">{step.number}</span><h3>{step.verb}</h3><p>{step.detail}</p><span class="arrow" aria-hidden="true">↘</span></li>))}
+        </ol>
+      </section>
+
+      <section class="section capabilities" id="capabilities">
+        <div class="shell">
+          <p class="eyebrow reveal">Capabilities</p>
+          <div class="cap-grid">
+            {capabilities.map((capability) => (<article class="cap-card reveal"><span class="mono">{capability.code}</span><h3>{capability.title}</h3><p>{capability.copy}</p></article>))}
+          </div>
+        </div>
+      </section>
+
+      <section class="section proof">
+        <div class="shell proof-grid reveal">
+          <div><p class="eyebrow">Operator-built</p><h2 class="section-title">The agency is new. The operating experience isn’t.</h2></div>
+          <div class="proof-stats"><div><strong>$60M+</strong><span>media directed</span></div><div><strong>13+</strong><span>years in growth</span></div><div><strong>-40%</strong><span>acquisition cost</span></div><div><strong>+50%</strong><span>qualified leads</span></div></div>
+        </div>
+      </section>
+
+      <section class="section shell fit" id="fit">
+        <div class="fit-copy reveal"><p class="eyebrow">Designed for the inflection point</p><h2 class="section-title">For teams with spend, signal—and a decision bottleneck.</h2></div>
+        <div class="fit-list reveal"><div><span>01</span><p>You have meaningful paid media investment but fragmented truth.</p></div><div><span>02</span><p>Creative output is rising faster than your ability to learn from it.</p></div><div><span>03</span><p>Revenue happens in a CRM, checkout or phone call—not inside Ads Manager.</p></div><div><span>04</span><p>You want AI leverage without surrendering operator judgment.</p></div></div>
+      </section>
+
+      <section class="cta-section">
+        <div class="shell cta-inner reveal"><p class="eyebrow">Bring us the messy growth problem</p><h2>We’ll find the signal inside it.</h2><div class="button-row"><a class="button" href="mailto:roi@johangarcia.com">roi@johangarcia.com ↗</a><a class="button secondary" href="https://johangarcia.com">Meet the founder ↗</a></div></div>
+      </section>
+    </main>
+
+    <footer><div class="shell"><span>© {new Date().getFullYear()} Digital Optimizer Agency</span><span class="mono">Miami / Working globally</span></div></footer>
+    <script>
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const elements = document.querySelectorAll('.reveal');
+      if (reduceMotion) elements.forEach((element) => element.classList.add('visible'));
+      else {
+        const observer = new IntersectionObserver((entries) => entries.forEach((entry) => {
+          if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+        }), { threshold: 0.12 });
+        elements.forEach((element) => observer.observe(element));
+      }
+    </script>
+  </body>
+</html>

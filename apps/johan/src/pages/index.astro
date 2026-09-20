@@ -1,0 +1,142 @@
+---
+import '../styles/global.css';
+
+const outcomes = [
+  { value: '$60M+', label: 'media investment directed' },
+  { value: '13+', label: 'years building growth systems' },
+  { value: '-40%', label: 'acquisition cost at Townsquare' },
+  { value: '+50%', label: 'qualified leads at Townsquare' },
+];
+
+const systems = [
+  { id: '01', title: 'Media', copy: 'Build channel portfolios around economics—not platform vanity metrics.' },
+  { id: '02', title: 'Creative', copy: 'Turn hooks, angles and formats into a measurable learning system.' },
+  { id: '03', title: 'Truth', copy: 'Connect ad signals to CRM, call and revenue outcomes.' },
+  { id: '04', title: 'Learning', copy: 'Make the next budget and creative decision faster, with evidence.' },
+];
+
+const work = [
+  { number: '01', title: 'Fractional growth leadership', copy: 'Senior acquisition strategy and operating cadence for teams that need traction now.' },
+  { number: '02', title: 'Acquisition-system build', copy: 'Channel architecture, measurement, creative intelligence and decision workflows.' },
+  { number: '03', title: 'Advisory + workshops', copy: 'Focused sessions for leaders navigating paid growth, attribution and applied AI.' },
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Johan Garcia builds high-performance acquisition systems connecting media, creative and revenue." />
+    <meta name="theme-color" content="#0a0b09" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Johan Garcia — Growth Systems & Performance Marketing</title>
+  </head>
+  <body>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <div class="shell nav-inner">
+        <a class="brand" href="#top" aria-label="Johan Garcia, home"><span class="brand-mark">JG</span><span>Johan Garcia</span></a>
+        <div class="nav-links">
+          <a href="#system">System</a>
+          <a href="#proof">Proof</a>
+          <a href="#work">Work with me</a>
+          <a class="button nav-cta" href="mailto:info@johangarcia.com">Start a conversation ↗</a>
+        </div>
+      </div>
+    </nav>
+
+    <main id="top">
+      <section class="hero shell">
+        <div class="grid-field" aria-hidden="true"></div>
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Growth operator · Miami / Global</p>
+          <h1 class="display">I turn growth data into decisions.</h1>
+          <p class="lede">I build acquisition systems that connect media, creative and offline revenue—so teams know what to scale, what to stop and what to make next.</p>
+          <div class="button-row">
+            <a class="button" href="mailto:info@johangarcia.com">Build the next growth system ↗</a>
+            <a class="button secondary" href="#proof">See the evidence ↓</a>
+          </div>
+        </div>
+        <figure class="portrait-wrap reveal">
+          <div class="portrait-frame">
+            <img src="/media/johan-garcia.png" width="504" height="500" alt="Johan Garcia" />
+          </div>
+          <figcaption><span>Performance marketing</span><span>Applied AI</span><span>Revenue truth</span></figcaption>
+        </figure>
+      </section>
+
+      <section class="outcomes" aria-label="Selected outcomes">
+        <div class="shell metrics">
+          {outcomes.map((outcome) => (
+            <div class="metric reveal"><strong>{outcome.value}</strong><span>{outcome.label}</span></div>
+          ))}
+        </div>
+      </section>
+
+      <section class="section shell" id="system">
+        <div class="section-intro reveal">
+          <div><p class="eyebrow">The operating system</p><h2 class="section-title">Growth should compound knowledge—not just spend.</h2></div>
+          <p class="lede">The strongest teams connect four disciplines into one feedback loop. Every campaign produces a result and a sharper next move.</p>
+        </div>
+        <div class="systems-grid">
+          {systems.map((system) => (
+            <article class="system-card card reveal"><span class="mono">{system.id}</span><h3>{system.title}</h3><p>{system.copy}</p><div class="pulse" aria-hidden="true"></div></article>
+          ))}
+        </div>
+      </section>
+
+      <section class="section proof" id="proof">
+        <div class="shell">
+          <p class="eyebrow reveal">Selected evidence</p>
+          <div class="case-list">
+            <article class="case reveal">
+              <div><span class="tag">Lead generation</span><h3>Townsquare Media</h3></div>
+              <p>Connected channel execution to qualified lead economics, creating a clearer system for budget decisions.</p>
+              <div class="case-result"><strong>+50%</strong><span>qualified leads</span><strong>-40%</strong><span>cost per acquisition</span></div>
+            </article>
+            <article class="case reveal">
+              <div><span class="tag">Platform growth</span><h3>Meta / WhatsApp</h3></div>
+              <p>Led advertising operations across Latin America and North America with a focus on scalable revenue delivery.</p>
+              <div class="case-result"><strong>+15%</strong><span>quarterly ad revenue growth</span></div>
+            </article>
+            <article class="case reveal">
+              <div><span class="tag">Ecommerce</span><h3>MenoLabs</h3></div>
+              <p>Built paid-social growth around creative velocity, disciplined measurement and customer economics.</p>
+              <div class="case-result"><strong>$55K → $4.5M</strong><span>monthly recurring revenue</span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section shell" id="work">
+        <div class="work-head reveal"><p class="eyebrow">Ways to work together</p><h2 class="section-title">Bring an operator into the room.</h2></div>
+        <div class="work-list">
+          {work.map((item) => (
+            <article class="work-row reveal"><span class="mono">{item.number}</span><h3>{item.title}</h3><p>{item.copy}</p></article>
+          ))}
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <div class="shell cta-inner reveal">
+          <p class="eyebrow">The next decision matters</p>
+          <h2>Let’s make it with better evidence.</h2>
+          <div class="button-row"><a class="button" href="mailto:info@johangarcia.com">info@johangarcia.com ↗</a><a class="button secondary" href="https://www.linkedin.com/in/johangarcia" rel="noreferrer">LinkedIn ↗</a></div>
+        </div>
+      </section>
+    </main>
+
+    <footer><div class="shell"><span>© {new Date().getFullYear()} Johan Garcia</span><span class="mono">Growth systems / Built to learn</span></div></footer>
+    <script>
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const elements = document.querySelectorAll('.reveal');
+      if (reduceMotion) elements.forEach((element) => element.classList.add('visible'));
+      else {
+        const observer = new IntersectionObserver((entries) => entries.forEach((entry) => {
+          if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+        }), { threshold: 0.12 });
+        elements.forEach((element) => observer.observe(element));
+      }
+    </script>
+  </body>
+</html>
