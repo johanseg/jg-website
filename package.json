@@ -1,17 +1,17 @@
 {
-  "name": "digital-optimizer-agency-site",
+  "name": "digital-optimizer-web",
+  "private": true,
+  "version": "1.0.0",
   "type": "module",
-  "version": "0.0.1",
+  "workspaces": [
+    "apps/*"
+  ],
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro check && astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "@astrojs/check": "^0.9.3",
-    "astro": "^5.2.3",
-    "typescript": "^5.6.2"
+    "dev:johan": "npm run dev -w @digital-optimizer/johan",
+    "dev:agency": "npm run dev -w @digital-optimizer/agency",
+    "build": "npm run build:johan && npm run build:agency",
+    "build:johan": "npm run build -w @digital-optimizer/johan",
+    "build:agency": "npm run build -w @digital-optimizer/agency",
+    "check": "npm run check -w @digital-optimizer/johan && npm run check -w @digital-optimizer/agency"
   }
 }
